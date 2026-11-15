@@ -1,0 +1,45 @@
+# Telethon sessions & sensitive data
+sessions/
+*.session
+*.session-journal
+passwords.json
+
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Logs
+logs/
+*.log
+
+# OS & IDE
+.DS_Store
+.idea/
+.vscode/
+
+# Local business funnel scripts & assets (untracked in QR repo)
+assets/
+bichat_*.py
+test_*.py
+check_more_bots.py
+deep_search_wilswn.py
+explore_similar_bots.py
+fetch_context.py
+find_wilswn_*.py
+funnel_worker.py
+live_test_10_chats.py
+main.py
+sales_agent.py
+README_FUNNEL.md
+
+# Separate project: TG Locker
+tg_locker/
+*.db
+*.sqlite3

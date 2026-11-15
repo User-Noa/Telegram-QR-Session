@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  telegram-qr-engine:
+    build: .
+    container_name: tg_qr_engine
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - HOST=0.0.0.0
+      - DISABLE_PROXY=false
+      - DOCKER_CONTAINER=true
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

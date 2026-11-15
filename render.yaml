@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: tg-qr-session-engine
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python web_qr/server.py
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: RENDER
+        value: "true"
+      - key: DISABLE_PROXY
+        value: "true"
+      - key: IS_CLOUD
+        value: "true"
